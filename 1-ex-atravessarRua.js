@@ -38,12 +38,13 @@ function atravessaRua(x,y,z){
         var contador2 = contador2 + 1
     }
     
-    const result = `A pessoa deu ${contador2} passos até chegar da posição inicial ${inicial} até a final ${final}`
+    const result = contador2
     
-    console.log(result); 
+    return result; 
 }
 
-atravessaRua(7,132,14);
+console.log(atravessaRua(7,132,14));
+
 
 // correto, solução do site da a mesma resposta que a minha
 /**
@@ -59,3 +60,4 @@ atravessaRua(7,132,14);
             }
         }      
  */
+module.exports = {atravessaRua};
